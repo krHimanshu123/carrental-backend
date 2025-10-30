@@ -75,6 +75,7 @@ public class SecurityConfig {
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
+        
     }
 
     // CORS: allow your frontend (adjust origin/ports as needed)
