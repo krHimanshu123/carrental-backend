@@ -24,5 +24,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                         .roles("USER")  // Modify roles as needed
                         .build())
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+        
     }
 }
